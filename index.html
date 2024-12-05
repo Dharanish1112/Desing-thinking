@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn and Play for Nomad Children</title>
+<!-- Connect the CSS file -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Learn and Play</h1>
+<p>Welcome! Choose a language to start:</p>
+<select id="languageSelector">
+<option value="english">English</option>
+<option value="arabic">Arabic</option>
+<option value="swahili">Swahili</option>
+</select>
+</header>
+
+<main>
+<section id="game">
+<h2>Interactive Learning</h2>
+<button id="startGame">Start Learning Game</button>
+<div id="gameArea" style="display:none;">
+<p id="question">What is 2 + 2?</p>
+<button class="answer" data-correct="false">3</button>
+<button class="answer" data-correct="true">4</button>
+<button class="answer" data-correct="false">5</button>
+</div>
+</section>
+</main>
+
+<footer>
+<p>© 2024 Learn and Play Initiative</p>
+</footer>
+
+<!-- Connect the JavaScript file -->
+<script src="app.js"></script>
+</body>
+</html>
